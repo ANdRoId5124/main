@@ -2,15 +2,15 @@ package StringDokument;
 
 public class Main {
     public static void main(String[] args) {
-        Dokument.setTheNumberOfDokument("1234-abc-5678-def-9g10h");
+        Dokument.setTheNumberOfDokument("1234-abc-5678-def-9g1h");
         System.out.println(Dokument.getTheNumberOfDokument());
-        Dokument.showFourBlocks("dokument");
-        Dokument.changedNumberOfDokument("dokument");
-        Dokument.showLiters("dokument");
-        Dokument.upCase(new StringBuilder());
-        Dokument.checkAbc("dokument");
-        Dokument.checkStart("dokument");
-        Dokument.checkEnd("dokument");
+        Dokument.showFourBlocks(Dokument.getTheNumberOfDokument());
+        Dokument.changedNumberOfDokument(Dokument.getTheNumberOfDokument());
+        Dokument.showLitersToLowerCase(Dokument.getTheNumberOfDokument());
+        Dokument.upCase(Dokument.getTheNumberOfDokument());
+        Dokument.checkAbc(Dokument.getTheNumberOfDokument());
+        Dokument.checkStart(Dokument.getTheNumberOfDokument());
+        Dokument.checkEnd(Dokument.getTheNumberOfDokument());
 
 
     }
