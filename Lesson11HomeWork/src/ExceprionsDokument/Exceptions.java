@@ -1,6 +1,6 @@
 package ExceprionsDokument;
 
-public class Exceptions {
+public class Exceptions  {
     public static class AbcException extends Exception {
         AbcException(String message) {
             super(message);

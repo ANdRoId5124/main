@@ -1,6 +1,6 @@
 package ExceprionsDokument;
 
-public class Main {
+public class Main  {
     public static void main(String[] args){
         Dokument.setTheNumberOfDokument("1234-abc-5678-def-9g1h");
         System.out.println(Dokument.getTheNumberOfDokument());

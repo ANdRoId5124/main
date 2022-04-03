@@ -1,6 +1,6 @@
 package ExceprionsDokument;
 
-public class Dokument {
+public class Dokument  {
     private static String theNumberOfDokument;
 
     public static void setTheNumberOfDokument(String theNumberOfDokument) {
