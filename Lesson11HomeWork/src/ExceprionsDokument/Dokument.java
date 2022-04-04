@@ -38,25 +38,23 @@ public class Dokument  {
         System.out.println((str1.substring(5,9) + str1.substring(14,18) + str1.charAt(19) + str1.charAt(21)).replace('-','/').toUpperCase());
     }
 
-    public static void checkAbc(String str) throws Exceptions.AbcException {
-        if(str.contains("abc") != true || str.toUpperCase().contains("abc".toUpperCase()) != true){
-            throw new Exceptions.AbcException("abc or ABC not found");
+    public static void checkAbc(String str) throws AbcException {
+        if(!str.contains("abc") || !str.toUpperCase().contains("abc".toUpperCase())){
+            throw new AbcException("abc or ABC not found");
         }
-        if(str.contains("abc") || str.toUpperCase().contains("abc".toUpperCase())){
             System.out.println("We have abc or ABC");
-        }
     }
 
-    public static void checkStart(String str) throws Exceptions.StartException {
-        if(str.startsWith("555") != true){
-            throw new Exceptions.StartException("Str do not start at 555");
+    public static void checkStart(String str) throws StartException {
+        if(!str.startsWith("555")){
+            throw new StartException("Str do not start at 555");
         }
         System.out.println(str.startsWith("555"));
     }
 
-    public static void checkEnd(String str) throws Exceptions.EndException{
-        if(str.endsWith("1a2b") != true){
-            throw new Exceptions.EndException("Str do not end at 1a2b");
+    public static void checkEnd(String str) throws EndException{
+        if(!str.endsWith("1a2b")){
+            throw new EndException("Str do not end at 1a2b");
         }
         System.out.println(str.endsWith("1a2b"));
     }

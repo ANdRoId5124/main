@@ -1,7 +1,7 @@
 package ExceprionsDokument;
 
 public class Main  {
-    public static void main(String[] args){
+    public static void main(String[] args) throws WrongLoginException, WrongPasswordException {
         Dokument.setTheNumberOfDokument("1234-abc-5678-def-9g1h");
         System.out.println(Dokument.getTheNumberOfDokument());
         Dokument.showFourBlocks(Dokument.getTheNumberOfDokument());
@@ -10,18 +10,19 @@ public class Main  {
         Dokument.upCase(Dokument.getTheNumberOfDokument());
         try {
             Dokument.checkAbc(Dokument.getTheNumberOfDokument());
-        } catch(Exceptions.AbcException e){
+        } catch(AbcException e){
             System.out.println(e.getMessage());
         }
         try {
             Dokument.checkStart(Dokument.getTheNumberOfDokument());
-        } catch (Exceptions.StartException e){
+        } catch (StartException e){
             System.out.println(e.getMessage());
         }
         try {
             Dokument.checkEnd(Dokument.getTheNumberOfDokument());
-        } catch (Exceptions.EndException e){
+        } catch (EndException e){
             System.out.println(e.getMessage());
         }
+        User.dataOfUser("Andre","qwerty12", "qwerty12");
     }
 }
