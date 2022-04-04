@@ -2,7 +2,7 @@ package ExceprionsDokument;
 
 
 public class User {
-    public static void dataOfUser(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
+    public static void showDataOfUser(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
         if(login.length() > 20) {
             throw new WrongLoginException("Login should have 20 symbols! No more!!!");
         }

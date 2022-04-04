@@ -23,6 +23,6 @@ public class Main  {
         } catch (EndException e){
             System.out.println(e.getMessage());
         }
-        User.dataOfUser("Andre","qwerty12", "qwerty12");
+        User.showDataOfUser("Andre","qwerty12", "qwerty12");
     }
 }
