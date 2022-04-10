@@ -1,0 +1,1 @@
+document :Wrong length or File don't start with docnum or contract
